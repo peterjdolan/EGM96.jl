@@ -3,6 +3,8 @@
 This is a direct port of the EGM96 model as defined by the NGIS.  More infomration can be
 found at http://earth-info.nga.mil/GandG/wgs84/gravitymod/egm96/egm96.html.
 
+[![Build Status](https://travis-ci.org/peterjdolan/EGM96.svg?branch=master)](https://travis-ci.org/peterjdolan/EGM96)
+
 ## Implementation
 
 This Julia module depends directly and indirectly on the base Fortran implementation of
