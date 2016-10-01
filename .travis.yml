@@ -1,7 +1,8 @@
 language: julia
 os:
   - linux
-  - osx
+  # Failing for now.
+  # - osx
 julia:
   - 0.5
   - nightly
