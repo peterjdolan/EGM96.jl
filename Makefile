@@ -1,7 +1,10 @@
 all: test
 
-test:
-	julia -e 'Pkg.rm("EGM96"); Pkg.init(); Pkg.clone(pwd()); Pkg.build("EGM96"); Pkg.test("EGM96")'
+test: install
+	julia -e 'Pkg.test("EGM96")'
+
+install:
+	julia -e 'Pkg.rm("EGM96"); Pkg.init(); Pkg.clone(pwd()); Pkg.build("EGM96");'
 
 clean:
 	rm -rf deps/usr

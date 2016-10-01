@@ -19,21 +19,18 @@ executed, and a resulting OUTPUT file being then consumed).
 
 ## Development
 
-To support development, it helps to add the parent of this directory (the one containing
-the "EGM96" directory) to your .juliarc.jl, as such:
+Because this library depends on a C library, testing relies on having built and installed
+the shared object.  After that is done, testing of the Julia code can be done more
+directly.
 
+First, install the package locally.  This will only install the latest code that's committed
+to your local git repository, and will not pick up any uncommitted changes.
 ```
-push!(LOAD_PATH, "/home/peter/workspace/anuncommonlab/a-few-spacecraft-utilities/julia")
+git commit -a -m "working"
+make clean install
 ```
 
-More information on Julia module search paths can be found at http://docs.julialang.org/en/release-0.5/manual/modules/
-
-## Problems
-
-Currently, the Julia package makes two direct calls to a compiled shared C library, but it's
-unclear how to make that shared library transparently available in a Julia package.  How does
-one effectively compile and link it at runtime?
-
-https://github.com/mlewe/BlossomV.jl/ and
-https://github.com/JuliaLang/BinDeps.jl do this, and can be used as
-examples.
+Then, testing can be done easily (and using uncommitted changes to the Julia code) with:
+```
+julia test/runtests.jl
+```
