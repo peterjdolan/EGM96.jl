@@ -12,7 +12,7 @@ function module_init()
     @assert isfile(egm96_filename)
 
     # Initialize the f477 C library
-    ccall((:init_arrays, "libf477"),
+    ccall((:init_arrays, libf477),
         Void,
         (Cstring, Cstring),
         corrcoef_filename,
@@ -23,7 +23,7 @@ end
 module_init()
 
 function undulation(lat::Number, lon::Number)
-    return ccall((:undulation, "libf477"),
+    return ccall((:undulation, libf477),
         Float64,
         (Float64, Float64, Int, Int),
         deg2rad(lat), deg2rad(lon), 360, 361)
