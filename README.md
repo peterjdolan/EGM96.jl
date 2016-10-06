@@ -3,7 +3,8 @@
 This is a direct port of the EGM96 model as defined by the NGIS.  More information can be
 found at http://earth-info.nga.mil/GandG/wgs84/gravitymod/egm96/egm96.html.
 
-[![Build Status](https://travis-ci.org/peterjdolan/EGM96.jl.svg?branch=master)](https://travis-ci.org/peterjdolan/EGM96.jl)
+[![Mac + Linux Build Status](https://travis-ci.org/peterjdolan/EGM96.jl.svg?branch=master)](https://travis-ci.org/peterjdolan/EGM96.jl)
+[![Windows Build status](https://ci.appveyor.com/api/projects/status/khbxit8u1kva9qsk?svg=true)](https://ci.appveyor.com/project/peterjdolan/egm96-jl)
 [![codecov](https://codecov.io/gh/peterjdolan/EGM96.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/peterjdolan/EGM96.jl)
 
 ## Implementation
