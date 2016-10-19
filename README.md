@@ -13,9 +13,9 @@ EGM96.jl wraps a C-translation of a Fortran program that was provided by the U.S
 government, implementing the EGM96 data model, which was produced and published by
 the U.S. government. The relevant licenses are as follows:
 
- * EGM96 model: U.S. Public Domain (https://project-open-data.cio.gov/open-licenses/)
- * EGM96 C-translation: ZLib license (http://zlib.net/zlib_license.html)
- * EGM96.jl Julia wrapper: MIT license
+ * EGM96 model: [U.S. Public Domain](https://project-open-data.cio.gov/open-licenses/)
+ * EGM96 C-translation: [ZLib license](http://zlib.net/zlib_license.html)
+ * EGM96.jl Julia wrapper: [MIT license](https://opensource.org/licenses/MIT)
 
 ## Implementation
 
