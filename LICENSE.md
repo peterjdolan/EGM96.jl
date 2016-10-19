@@ -21,3 +21,7 @@ The EGM96.jl package is licensed under the MIT "Expat" License:
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 > SOFTWARE.
 > 
+
+The f477.c dependency is licensed under the ZLib license.
+
+The data for the EGM96 model is U.S. Public Domain.
