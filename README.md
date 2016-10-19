@@ -7,6 +7,16 @@ found at http://earth-info.nga.mil/GandG/wgs84/gravitymod/egm96/egm96.html.
 [![Windows Build status](https://ci.appveyor.com/api/projects/status/khbxit8u1kva9qsk?svg=true)](https://ci.appveyor.com/project/peterjdolan/egm96-jl)
 [![codecov](https://codecov.io/gh/peterjdolan/EGM96.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/peterjdolan/EGM96.jl)
 
+## Licensing
+
+EGM96.jl wraps a C-translation of a Fortran program that was provided by the U.S.
+government, implementing the EGM96 data model, which was produced and published by
+the U.S. government. The relevant licenses are as follows:
+
+ * EGM96 model: U.S. Public Domain (https://project-open-data.cio.gov/open-licenses/)
+ * EGM96 C-translation: ZLib license (http://zlib.net/zlib_license.html)
+ * EGM96.jl Julia wrapper: MIT license
+
 ## Implementation
 
 This Julia module depends directly and indirectly on the base Fortran implementation of
