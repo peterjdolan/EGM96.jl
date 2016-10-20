@@ -7,6 +7,9 @@ found at http://earth-info.nga.mil/GandG/wgs84/gravitymod/egm96/egm96.html.
 [![Windows Build status](https://ci.appveyor.com/api/projects/status/khbxit8u1kva9qsk?svg=true)](https://ci.appveyor.com/project/peterjdolan/egm96-jl)
 [![codecov](https://codecov.io/gh/peterjdolan/EGM96.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/peterjdolan/EGM96.jl)
 
+[![EGM96](http://pkg.julialang.org/badges/EGM96_0.5.svg)](http://pkg.julialang.org/?pkg=EGM96) 
+[![EGM96](http://pkg.julialang.org/badges/EGM96_0.6.svg)](http://pkg.julialang.org/?pkg=EGM96)
+
 ## Licensing
 
 EGM96.jl wraps a C-translation of a Fortran program that was provided by the U.S.
