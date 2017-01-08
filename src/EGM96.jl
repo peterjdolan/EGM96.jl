@@ -7,5 +7,7 @@ module EGM96
     end
     
     export undulation
+    export legendre_cos
     include("f477.jl")
+    include("legendre_cos.jl")
 end
